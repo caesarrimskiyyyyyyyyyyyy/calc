@@ -34,7 +34,8 @@ public class Main {
             } else {
                 leftIntOperand = Integer.parseInt(left);
                 rightIntOperand = Integer.parseInt(right);
-                if (leftIntOperand <= 10 && rightIntOperand <= 10) {
+                if (leftIntOperand <= 10 && rightIntOperand <= 10 &&
+                        leftIntOperand >= 1 && rightIntOperand >= 1) {
                     result = String.valueOf(calculationOfExpression(leftIntOperand, operation, rightIntOperand));
                 } else throw new Exception();
             }
